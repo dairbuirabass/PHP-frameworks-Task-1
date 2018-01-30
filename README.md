@@ -1,4 +1,4 @@
-# PHP.-Task-1
+# PHP-frameworks-Task-1
 
 <b>Description:</b> 
 Code can be tested with PHP — ```php -S localhost:8000 index.php```
