@@ -1,6 +1,6 @@
 <?php
 
-class Controller
+class HelloWorldController
 {
     private $model;
 
@@ -12,3 +12,5 @@ class Controller
         $this->model->string = "Updated Hello World!";
     }
 }
+
+?>

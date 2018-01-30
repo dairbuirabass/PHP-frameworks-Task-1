@@ -1,6 +1,6 @@
 <?php
 
-class Model
+class HelloWorldModel
 {
     public $string;
 
@@ -9,3 +9,5 @@ class Model
     }
 
 }
+
+?>

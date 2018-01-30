@@ -1,6 +1,6 @@
 <?php
 
-class View
+class HelloWorldView
 {
     private $model;
     private $controller;
@@ -14,3 +14,5 @@ class View
         return '<p><a href="index.php?action=mouseButtonPressed">'.$this->model->string."</a></p>";
     }
 }
+
+?>
