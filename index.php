@@ -1,42 +1,9 @@
 <?php
 
-class Model
-{
-    public $string;
+include "HelloWorldView.php";
+include "HelloWorldModel.php";
+include "HelloWorldController.php";
 
-    public function __construct(){
-        $this->string = "Hello World!";
-    }
-
-}
-
-class View
-{
-    private $model;
-    private $controller;
-
-    public function __construct($controller,$model) {
-        $this->controller = $controller;
-        $this->model = $model;
-    }
-
-    public function output() {
-        return '<p><a href="index.php?action=mouseButtonPressed">'.$this->model->string."</a></p>";
-    }
-}
-
-class Controller
-{
-    private $model;
-
-    public function __construct($model){
-        $this->model = $model;
-    }
-
-    public function mouseButtonPressed() {
-        $this->model->string = "Updated Hello World!";
-    }
-}
 
 $model = new Model();
 $controller = new Controller($model);
